@@ -5,7 +5,7 @@ resource "aws_sns_topic" "sns_topic" {
   {
     "http": {
       "defaultHealthyRetryPolicy": {
-        "minDelayTarget": "${var.sns_topic_min_delay_target}",
+        "minDelayTarget": 0,
         "maxDelayTarget": "${var.sns_topic_max_delay_target}",
         "numRetries": "${var.sns_topic_num_retries}",
         "numMaxDelayRetries": "${var.sns_topic_num_max_delay_retries}",
