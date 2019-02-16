@@ -13,7 +13,7 @@ resource "aws_sns_topic" "sns_topic" {
         "numMinDelayRetries": ${var.sns_topic_num_min_delay_retries},
         "backoffFunction": "${var.sns_topic_backoff_function}"
         },
-        "disableSubscriptionOverrides": "${var.sns_topic_disable_subscription_overrides}",
+        "disableSubscriptionOverrides": ${var.sns_topic_disable_subscription_overrides},
         "defaultThrottlePolicy": {
           "maxReceivesPerSecond": ${var.sns_topic_max_receives_per_second}
         }
