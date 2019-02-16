@@ -1,3 +1,6 @@
+variable "sqs_queue_name" {
+  description = "sqs_queue_name"
+}
 variable "sqs_queue_delay_seconds" {
   description = "sqs_queue_delay_seconds"
 }
