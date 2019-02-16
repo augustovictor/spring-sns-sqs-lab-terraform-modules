@@ -3,6 +3,7 @@ variable "sns_topic_name" {
 }
 variable "sns_topic_min_delay_target" {
   description = "The sns_topic_min_delay_target"
+  type = "integer"
 }
 variable "sns_topic_max_delay_target" {
   description = "The sns_topic_max_delay_target"
